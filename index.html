@@ -40,12 +40,15 @@
           <div class="navbar-end">
             <div class="btn btn-ghost flex">
               <img class="h-7 w-7" src="./assets/coin.png" alt="Logo Coin" />
-              <span id="balance" class="">5500</span> <span class="">BDT</span>
+              <p>
+                <span id="balance">5500</span>
+                <span>BDT</span>
+              </p>
             </div>
           </div>
         </div>
       </nav>
-      <div class="flex space-x-4 mt-16 justify-center">
+      <div class="flex space-x-4 mt-9 justify-center">
         <button class="btn px-8 bg-[#B4F461]">Donation</button>
         <button class="btn px-8 btn-ghost btn-outline">History</button>
       </div>
@@ -54,16 +57,12 @@
       <div id="donation-card" class="space-y-8">
         <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
           <figure>
-            <img
-              class="h-96"
-              src="./assets/noakhali.png"
-              alt="noakhali flood"
-            />
+            <img class="" src="./assets/noakhali.png" alt="noakhali flood" />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%] px-0">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span>0</span> BDT</p>
+              <p><span id="balance-noakhali">0</span> BDT</p>
             </button>
             <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
             <p>
@@ -76,12 +75,13 @@
             </p>
             <div class="card-actions">
               <input
+                id="donate-noakhali-flood"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
               <button
-                onclick="my_modal_5.showModal()"
+                id="btn-donate-noakhali"
                 class="btn w-full font-bold px-8 bg-[#B4F461]"
               >
                 Donate Now
@@ -91,12 +91,12 @@
         </div>
         <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
           <figure>
-            <img class="h-96" src="./assets/feni.png" alt="feni flood" />
+            <img class="" src="./assets/feni.png" alt="feni flood" />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%] px-0">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span>0</span> BDT</p>
+              <p><span id="balance-feni">0</span> BDT</p>
             </button>
             <h2 class="card-title">
               Donate for Flood Relief in Feni,Bangladesh
@@ -113,11 +113,15 @@
             </p>
             <div class="card-actions">
               <input
+                id="donate-feni-flood"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
-              <button class="btn w-full font-bold px-8 bg-[#B4F461]">
+              <button
+                id="btn-donate-feni"
+                class="btn w-full font-bold px-8 bg-[#B4F461]"
+              >
                 Donate Now
               </button>
             </div>
@@ -126,15 +130,15 @@
         <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
           <figure>
             <img
-              class="h-96"
+              class=""
               src="./assets/quota-protest.png"
               alt="quota protest"
             />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%]">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span>0</span> BDT</p>
+              <p><span id="balance-quota-movement">0</span> BDT</p>
             </button>
             <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
             <p>
@@ -150,11 +154,15 @@
             </p>
             <div class="card-actions">
               <input
+                id="donate-quota-movement"
                 type="text"
                 placeholder="Write Donation Amount"
                 class="input input-bordered w-full"
               />
-              <button class="btn w-full font-bold px-8 bg-[#B4F461]">
+              <button
+                id="btn-donate-quotaMovement"
+                class="btn w-full font-bold px-8 bg-[#B4F461]"
+              >
                 Donate Now
               </button>
             </div>
