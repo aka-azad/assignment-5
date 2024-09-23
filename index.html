@@ -10,9 +10,47 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-lexend {
+        font-family: "Lexend", system-ui;
+        font-optical-sizing: auto;
+      }
+    </style>
   </head>
-  <body>
-    <header class=""><h1>hello world</h1></header>
+  <body class="font-lexend">
+    <header class="sticky top-0">
+      <nav class="bg-[#f9f7f3]">
+        <div class="navbar container lg:max-w-6xl mx-auto">
+          <div class="navbar-start">
+            <button class="btn px-8 bg-[#B4F461]">Blog</button>
+          </div>
+          <div class="navbar-center">
+            <img
+              class="h-12 w-12"
+              src="./assets/logo.png"
+              alt="Donate Bangladesh Logo"
+            />
+            <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+          </div>
+          <div class="navbar-end">
+            <div class="btn btn-ghost flex">
+              <img class="h-7 w-7" src="./assets/coin.png" alt="Logo Coin" />
+              <span id="balance" class="">5500</span> <span class="">BDT</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="flex space-x-4 mt-16 justify-center">
+        <button class="btn px-8 bg-[#B4F461]">Donation</button>
+        <button class="btn px-8 btn-ghost btn-outline">History</button>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
