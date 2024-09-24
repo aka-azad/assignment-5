@@ -37,12 +37,14 @@
               src="./assets/logo.png"
               alt="Donate Bangladesh Logo"
             />
-            <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+            <a class="btn btn-ghost text-xl hidden sm:block leading-[3.75rem]"
+              >Donate Bangladesh</a
+            >
           </div>
           <div class="navbar-end">
             <div class="btn btn-ghost flex">
               <img class="h-7 w-7" src="./assets/coin.png" alt="Logo Coin" />
-              <p>
+              <p class="text-gray-600">
                 <span id="balance">5500</span>
                 <span>BDT</span>
               </p>
@@ -61,17 +63,21 @@
     </header>
     <main class="container lg:max-w-6xl mx-auto mb-8 space-y-8">
       <div id="donation-card" class="space-y-8">
-        <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
+        <div
+          class="card lg:card-side bg-base-100 shadow-xl sm:p-8 p-4 border-2"
+        >
           <figure>
             <img class="" src="./assets/noakhali.png" alt="noakhali flood" />
           </figure>
           <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%] px-0">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span id="balance-noakhali">0</span> BDT</p>
+              <p class="text-gray-600">
+                <span id="balance-noakhali">0</span> BDT
+              </p>
             </button>
             <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
-            <p>
+            <p class="text-[rgba(17,17,17,.7)] font-light">
               The recent floods in Noakhali have caused significant damage to
               homes infrastructure. Your donation will help provide essential
               supplies and to those affected by this disaster. Every
@@ -95,19 +101,21 @@
             </div>
           </div>
         </div>
-        <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
+        <div
+          class="card lg:card-side bg-base-100 shadow-xl sm:p-8 p-4 border-2"
+        >
           <figure>
             <img class="" src="./assets/feni.png" alt="feni flood" />
           </figure>
           <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%] px-0">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span id="balance-feni">0</span> BDT</p>
+              <p class="text-gray-600"><span id="balance-feni">0</span> BDT</p>
             </button>
             <h2 class="card-title">
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
-            <p>
+            <p class="text-[rgba(17,17,17,.7)] font-light">
               The recent floods in Feni have devastated local communities,
               leading to severe disruption and loss. Your generous donation will
               help provide immediate aid, including food, clean water, and
@@ -133,7 +141,9 @@
             </div>
           </div>
         </div>
-        <div class="card lg:card-side bg-base-100 shadow-xl p-8 border-2">
+        <div
+          class="card lg:card-side bg-base-100 shadow-xl sm:p-8 p-4 border-2"
+        >
           <figure>
             <img
               class=""
@@ -141,13 +151,15 @@
               alt="quota protest"
             />
           </figure>
-          <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%]">
+          <div class="card-body sm:p-0 md:pl-6 md:max-w-[50%] px-0">
             <button class="btn max-w-fit">
               <img class="h-6" src="./assets/coin.png" alt="coin" />
-              <p><span id="balance-quota-movement">0</span> BDT</p>
+              <p class="text-gray-600">
+                <span id="balance-quota-movement">0</span> BDT
+              </p>
             </button>
             <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
-            <p>
+            <p class="text-[rgba(17,17,17,.7)] font-light">
               The recent Quota movement has resulted in numerous injuries and
               significant hardship for many individuals. Your support is crucial
               in providing medical assistance, rehabilitation, and necessary

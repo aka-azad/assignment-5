@@ -26,6 +26,18 @@ document
     document.getElementById("donation-card").classList.remove("hidden");
     document.getElementById("transaction-history").classList.add("hidden");
     document
+      .getElementById("btn-show-donationCard")
+      .classList.remove(...["btn-ghost", "btn-outline"]);
+    document
+      .getElementById("btn-show-donationCard")
+      .classList.add("bg-[#B4F461]");
+    document
+      .getElementById("btn-show-history")
+      .classList.add(...["btn-ghost", "btn-outline"]);
+    document
+      .getElementById("btn-show-history")
+      .classList.remove("bg-[#B4F461]");
+    document
       .getElementById("foot")
       .classList.remove(...["fixed", "bottom-0", "left-0", "right-0"]);
   });
@@ -35,6 +47,16 @@ document
   .addEventListener("click", function () {
     document.getElementById("transaction-history").classList.remove("hidden");
     document.getElementById("donation-card").classList.add("hidden");
+    document
+      .getElementById("btn-show-history")
+      .classList.remove(...["btn-ghost", "btn-outline"]);
+    document.getElementById("btn-show-history").classList.add("bg-[#B4F461]");
+    document
+      .getElementById("btn-show-donationCard")
+      .classList.add(...["btn-ghost", "btn-outline"]);
+    document
+      .getElementById("btn-show-donationCard")
+      .classList.remove("bg-[#B4F461]");
     document
       .getElementById("foot")
       .classList.add(...["fixed", "bottom-0", "left-0", "right-0"]);
