@@ -24,10 +24,12 @@
   </head>
   <body class="font-lexend">
     <header class="sticky top-0 z-50 backdrop-blur pb-8">
-      <nav class="bg-[#f9f7f3] backdrop-blur">
+      <nav class="bg-[#f9f7f3] bg-opacity-90 backdrop-blur">
         <div class="navbar container lg:max-w-6xl mx-auto py-6">
           <div class="navbar-start">
-            <button class="btn px-8 bg-[#B4F461]">Blog</button>
+            <button id="btn-navigate-blog" class="btn px-8 bg-[#B4F461]">
+              Blog
+            </button>
           </div>
           <div class="navbar-center">
             <img
@@ -49,8 +51,12 @@
         </div>
       </nav>
       <div class="flex space-x-4 mt-9 justify-center">
-        <button class="btn px-8 bg-[#B4F461]">Donation</button>
-        <button class="btn px-8 btn-ghost btn-outline">History</button>
+        <button id="btn-show-donationCard" class="btn px-8 bg-[#B4F461]">
+          Donation
+        </button>
+        <button id="btn-show-history" class="btn px-8 btn-ghost btn-outline">
+          History
+        </button>
       </div>
     </header>
     <main class="container lg:max-w-6xl mx-auto mb-8 space-y-8">
@@ -169,37 +175,9 @@
           </div>
         </div>
       </div>
-      <div id="transaction-history" class="space-y-8">
-        <div class="transaction border-2 rounded-xl p-8">
-          <p>
-            <span>96500</span> Taka is Donated for
-            <span>famine-2024 at Feni, Bangladesh</span>
-          </p>
-          <p>
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-        <div class="transaction border-2 rounded-xl p-8">
-          <p>
-            <span>96500</span> Taka is Donated for
-            <span>famine-2024 at Feni, Bangladesh</span>
-          </p>
-          <p>
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-        <div class="transaction border-2 rounded-xl p-8">
-          <p>
-            <span>96500</span> Taka is Donated for
-            <span>famine-2024 at Feni, Bangladesh</span>
-          </p>
-          <p>
-            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-          </p>
-        </div>
-      </div>
+      <div id="transaction-history" class="space-y-8 hidden"></div>
     </main>
-    <footer class="bg-[#f9f7f3] h-24"></footer>
+    <footer id="foot" class="bg-[#f9f7f3] h-24"></footer>
     <!-- MODAL -->
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
       <div class="modal-box flex flex-col items-center space-y-2">
@@ -216,7 +194,6 @@
       </div>
     </dialog>
     <script src="./js/home.js"></script>
-    <script src="./js/blog.js"></script>
     <script src="./js/history.js"></script>
     <script src="./js/utilities.js"></script>
   </body>

@@ -24,10 +24,12 @@
   </head>
   <body class="font-lexend">
     <header class="sticky top-0 z-50 backdrop-blur pb-8">
-      <nav class="bg-[#f9f7f3] backdrop-blur">
+      <nav class="bg-[#f9f7f3] bg-opacity-90 backdrop-blur">
         <div class="navbar container lg:max-w-6xl mx-auto py-6">
           <div class="navbar-start">
-            <button class="btn px-8 bg-[#B4F461]">Home</button>
+            <button id="btn-navigate-home" class="btn px-8 bg-[#B4F461]">
+              Home
+            </button>
           </div>
           <div class="navbar-end">
             <img
@@ -40,32 +42,86 @@
         </div>
       </nav>
     </header>
-    <main class="container lg:max-w-6xl mx-auto py-6 space-y-7">
+    <main class="container lg:max-w-6xl mx-auto py-6 space-y-3">
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          <p>What is document object model(DOM)?</p>
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            The Document Object Model (DOM) is a programming interface that
+            represents a web page's structure and allows programs to change its
+            content, style, and structure. The DOM is a tree-like structure of
+            nodes and objects that allows developers to interact with the page
+            using programming languages like JavaScript.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          <p>How do you select an object from the DOM?</p>
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            getElementById: Selects an element by its ID. <br />
+            querySelector: Selects an element based on a CSS selector.<br />
+            querySelectorAll: Selects all elements matching a CSS selector.<br />
+            getElementsByTagName: Selects elements by their tag name.<br />
+            getElementsByClassName: Selects elements by their class name.
+          </p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          <p>
+            What is event delegation in the context of DOM, why it is useful?
+          </p>
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>
+            Event delegation is a technique in JavaScript where you attach an
+            event listener to a parent element instead of individual child
+            elements. When an event occurs on any of the child elements, the
+            event bubbles up to the parent, triggering the listener. <br />
+            <br />
+            <br />
+            Efficiency: It reduces the number of event listeners needed,
+            improving performance.<br />
+            Dynamic content: It's ideal for scenarios where elements are added
+            or removed dynamically, as you don't need to re-attach event
+            listeners to new elements.<br />
+            Centralized handling: It allows you to handle events for multiple
+            elements in a single place, making your code more organized and
+            easier to maintain.<br />
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          <p>
+            How do you manipulate an aliment's attributes and style using DOM?
+          </p>
+        </div>
+        <div class="collapse-content">
+          <p>
+            <strong> Attributes:</strong>
+            <br />
+            getAttribute(attributeName): Gets the value of a specified
+            attribute.<br />setAttribute(attributeName, attributeValue): Sets
+            the value of a specified attribute.<br />
+            removeAttribute(attributeName): Removes a specified attribute.<br />
+            <strong>Style:</strong> <br />style.property: Accesses or sets the
+            value of a specific CSS property. <br />classList.add(className):
+            Adds a class to the element. <br />classList.remove(className):
+            Removes a class from the element. <br />classList.toggle(className):
+            Toggles a class on or off the element.
+            <br />classList.contains(className): Checks if the element has a
+            specific class.
+          </p>
         </div>
       </div>
     </main>
